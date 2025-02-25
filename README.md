@@ -20,24 +20,12 @@ Principal Component Analysis (PCA) is a widely used dimensionality reduction tec
 5. **Projection**: Data is transformed into the new feature space using the selected principal components.
 
 ## Mathematical Explanation
-1. Given a dataset \(X\), standardize it:
-   \[
-   X_{standardized} = \frac{X - \mu}{\sigma}
-   \]
-2. Compute the covariance matrix:
-   \[
-   C = \frac{1}{n} X^T X
-   \]
-3. Compute eigenvalues and eigenvectors:
-   \[
-   C v = \lambda v
-   \]
+1. Given a dataset X, standardize it
+2. Compute the covariance matrix
+3. Compute eigenvalues and eigenvectors
 4. Sort eigenvectors by descending eigenvalues and form a matrix of top k eigenvectors.
-5. Project data onto the new space:
-   \[
-   X_{new} = X P
-   \]
-   where \(P\) contains the top k eigenvectors.
+5. Project data onto the new space
+
 
 ## Visualization of PCA
 PCA is often visualized using scatter plots of the transformed dataset in two or three dimensions, showing how variance is distributed across components.
